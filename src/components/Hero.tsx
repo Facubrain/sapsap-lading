@@ -73,31 +73,17 @@ const Hero = () => {
               </Button>
             </div>
 
-            <div className="mt-10 max-w-xl space-y-4">
-              <div className="space-y-2">
-                <h3 className="text-2xl font-semibold leading-relaxed">
-                  Reserva tu lugar en la lista de espera de <span className="brand-font text-gradient-cyan">SAP SAP</span>.
-                </h3>
-                <p className="text-base text-muted-foreground">
-                  Recibe invitaciones prioritarias, acceso anticipado a misiones beta y recompensas exclusivas cuando la plataforma salga a la luz.
-                </p>
+            <div className="mt-10 max-w-xl">
+              <div className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 space-y-4">
+                <div className="space-y-2">
+                  <h3 className="text-2xl font-semibold leading-relaxed">
+                    Reserva tu lugar en la lista de espera de <span className="brand-font text-gradient-cyan">SAP SAP</span>.
+                  </h3>
+                </div>
+                <WaitlistForm />
               </div>
-              <WaitlistForm />
-              <p className="text-xs text-muted-foreground">
-                Prometemos solo enviar novedades relevantes y podrás salirte cuando quieras.
-              </p>
             </div>
 
-            <div className="mt-8 flex items-center gap-6 text-sm text-muted-foreground">
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-                <span>+50K usuarios activos</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                <span>20+ idiomas disponibles</span>
-              </div>
-            </div>
           </div>
 
           <div className="relative h-full min-h-[320px] flex items-center justify-center">
