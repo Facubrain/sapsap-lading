@@ -1,0 +1,215 @@
+SAPSAP DESIGN SYSTEM DOCUMENTATION
+=====================================
+
+BRAND IDENTITY
+--------------
+• Brand Name: SapSap
+• Positioning: Platform for sharing travel experiences and language stories
+• Voice: Modern, inspiring, global, accessible
+• Target: Language enthusiasts, travelers, content creators
+
+COLOR PALETTE (HSL VALUES)
+-------------------------
+PRIMARY COLORS:
+• Netflix Red (Primary CTA): hsl(357, 89%, 48%) | #E50914
+  - Usage: Main buttons, key highlights, primary branding
+  - Hex alternative: #E5091D
+  
+• SapSap Cyan (Secondary Accent): hsl(171, 100%, 38%) | #00C2A8
+  - Usage: Secondary buttons, accents, text highlights
+  - Hex alternative: #00C2A8
+
+NEUTRAL COLORS:
+• Background: hsl(0, 0%, 0%) | #000000 (Pure Black)
+• Foreground: hsl(0, 0%, 100%) | #FFFFFF (Pure White)
+• Muted Text: hsl(0, 0%, 70%) | #B3B3B3
+• Card Background: hsl(0, 0%, 7%) | #121212
+• Border: hsl(0, 0%, 20%) | #333333
+
+LIGHT SECTION COLORS:
+• Light Background: hsl(0, 0%, 98%) | #FAFAFA
+• Light Text: hsl(0, 0%, 0%) | #000000
+
+TYPOGRAPHY
+----------
+PRIMARY FONT (Headings):
+• Font Family: 'Poppins', sans-serif
+• Usage: All headings (h1-h6), brand text, important CTAs
+• Weights Available: 400 (Regular), 600 (SemiBold), 800 (ExtraBold)
+
+BRAND FONT (Logo/Brand):
+• Font Family: 'Poppins', sans-serif
+• Font Weight: 800 (ExtraBold)
+• Usage: Logo text "SapSap", brand signatures
+• Class: .brand-font
+
+BODY FONT:
+• Font Family: 'Inter', sans-serif
+• Usage: Body text, descriptions, form inputs
+• Weights: 400 (Regular), 500 (Medium), 600 (SemiBold)
+
+FONT SCALE & HIERARCHY:
+• Hero Title: text-5xl md:text-7xl (80px-112px)
+• Section Headers: text-4xl md:text-5xl (56px-72px)
+• Subsection Headers: text-2xl md:text-3xl (24px-32px)
+• Body Large: text-xl md:text-2xl (20px-24px)
+• Body Regular: text-base (16px)
+• Small Text: text-sm (14px)
+
+GRADIENT EFFECTS
+---------------
+• Text Gradient Red: from-primary to-orange-500
+  - CSS: bg-gradient-to-r from-primary to-orange-500 bg-clip-text text-transparent
+  - Class: .text-gradient-red
+
+• Text Gradient Cyan: from-secondary to-cyan-400
+  - CSS: bg-gradient-to-r from-secondary to-cyan-400 bg-clip-text text-transparent
+  - Class: .text-gradient-cyan
+
+• CTA Gradient: linear-gradient(90deg, hsl(357 89% 48%), hsl(11 100% 67%))
+  - Usage: Primary buttons, hero CTAs
+
+SPACING & LAYOUT
+---------------
+• Container Max Width: 1200px
+• Section Padding: py-20 (80px vertical)
+• Card Padding: p-6 (24px)
+• Button Padding: px-8 py-4 (32px horizontal, 16px vertical)
+• Border Radius: 0.75rem (12px) - defined as --radius
+
+COMPONENTS
+----------
+BUTTONS:
+• Primary (Hero): Netflix red gradient with white text
+• Secondary (Cyan Outline): Cyan border with transparent background
+• Size Large: text-lg with increased padding
+
+CARDS:
+• Glass Effect: backdrop-blur-md bg-black/30 border border-white/10
+• Class: .glass-effect
+
+VIDEO CONTAINER:
+• Aspect Ratio: 9:16 (vertical mobile format)
+• Border Radius: 2.5rem (40px) for rounded phone-like appearance
+• Shadow: Custom red glow effect
+
+LOGO SPECIFICATIONS
+------------------
+• File: /public/logosapsap.png
+• Format: PNG with transparency
+• Original Size: 1000x1000px
+• Recommended Display Sizes:
+  - Hero: 220x70px
+  - Header: 120x40px
+  - Footer: 80x25px
+
+GLOW EFFECTS
+-----------
+• Red Glow: 0 0 20px hsla(357, 89%, 48%, 0.5)
+• Cyan Glow: 0 0 20px hsla(171, 100%, 38%, 0.5)
+• Classes: .hover-glow-red, .hover-glow-cyan
+
+ANIMATION GUIDELINES
+-------------------
+• Transition Duration: 300ms (standard)
+• Hover Effects: Scale 1.05 for logos, glow for buttons
+• Story Carousel: Linear infinite animation, 10s-30s duration
+• Responsive Animation: Reduced motion support included
+
+BREAKPOINTS
+-----------
+• Mobile: < 768px
+• Tablet: 768px - 1024px
+• Desktop: > 1024px
+• Large Desktop: > 1440px
+
+ACCESSIBILITY
+------------
+• Color Contrast: All text meets WCAG AA standards
+• Focus States: Visible focus rings on interactive elements
+• Reduced Motion: Respects prefers-reduced-motion
+• Alt Text: All images include descriptive alt attributes
+
+CONTENT GUIDELINES
+-----------------
+HERO SECTION:
+• Main headline should be inspiring and action-oriented
+• Subtitle explains value proposition clearly
+• CTA should create urgency ("Reserva tu lugar en el prelanzamiento")
+
+STORY COVERS:
+• Descriptions should be 2 lines maximum on hover
+• Focus on experience and emotion rather than technical details
+• Use active voice and engaging language
+
+MULTI-LANGUAGE SUPPORT
+---------------------
+• Supported Languages: Spanish (default), English, French, Portuguese
+• Auto-detection based on IP geolocation
+• Manual language switcher in top-right corner
+• Flag icons for visual language identification
+
+VIDEO ASSETS
+-----------
+• Hero Video: 
+  - Desktop: 1.9MB optimized
+  - Mobile: 1.3MB optimized
+  - Poster: 66KB for lazy loading
+  - Format: MP4, H.264 codec
+
+• Social Media Videos:
+  - Format: 1080x1920 (vertical)
+  - Duration: 5 seconds
+  - Size: < 50KB for optimal loading
+  - Include brand logo and hook message
+
+BRAND VOICE & MESSAGING
+----------------------
+• Tone: Inspiring, global, accessible, modern
+• Key Messages:
+  - "Transform experiences into stories"
+  - "Share your journey with the world"
+  - "Your first viral story is waiting"
+• Avoid: Technical jargon, complex language, lengthy explanations
+
+DESIGN PRINCIPLES
+----------------
+1. MINIMALISM: Clean, focused design with plenty of whitespace
+2. CONTRAST: Strong color contrast for readability and impact
+3. HIERARCHY: Clear visual hierarchy through typography and spacing
+4. RESPONSIVENESS: Mobile-first approach with scalable design
+5. PERFORMANCE: Optimized assets and lazy loading for fast experiences
+6. ACCESSIBILITY: Inclusive design for all users
+
+FUTURE IMPROVEMENTS
+------------------
+• Consider adding micro-interactions for enhanced engagement
+• Implement skeleton loading states for better perceived performance
+• Add dark/light mode toggle for user preference
+• Consider custom icon set for brand consistency
+• Explore motion graphics for story carousel enhancements
+• Add progressive image loading for story covers
+• Consider implementing custom cursor effects for desktop
+• Explore 3D elements or parallax effects for premium feel
+
+TECHNICAL NOTES
+--------------
+• Built with React, TypeScript, Tailwind CSS
+• Uses Shadcn/ui component library
+• Implements lazy loading for videos and images
+• IP-based geolocation for language detection
+• Responsive video sources for optimal performance
+• Git repository structure optimized for collaborative development
+
+BRAND ASSETS CHECKLIST
+---------------------
+✅ Logo (PNG format with transparency)
+✅ Favicon (ICO format)
+✅ Hero video (optimized for web)
+✅ Social media end screens
+✅ Story cover images
+✅ Color palette documentation
+✅ Typography specifications
+✅ Component library setup
+
+This design system ensures consistency across all SapSap touchpoints and provides clear guidelines for future development and design decisions.
