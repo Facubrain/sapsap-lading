@@ -1,17 +1,25 @@
 import { Button } from "@/components/ui/button";
 import { Apple, Pause, Play, Volume2, VolumeX } from "lucide-react";
-import heroVideo from "@/assets/video/jelous-sapsap.mp4";
+import heroVideoDesktop from "@/assets/video/jelous-sapsap-desktop.mp4";
+import heroVideoMobile from "@/assets/video/jelous-sapsap-mobile.mp4";
+import heroPoster from "@/assets/video/jelous-sapsap-poster.jpg";
 import WaitlistForm from "@/components/WaitlistForm";
 import LanguageSwitch from "@/components/LanguageSwitch";
 import Logo from "@/components/Logo";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useEffect, useRef, useState } from "react";
+import { useVideoLazyLoad } from "@/hooks/useVideoLazyLoad";
+import { useDeviceType } from "@/hooks/useDeviceType";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
   const { language, setLanguage, t } = useLanguage();
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const { videoRef, shouldLoadVideo } = useVideoLazyLoad({ threshold: 0.1 });
+  const deviceType = useDeviceType();
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(false);
+  
+  // Select appropriate video source based on device
+  const videoSrc = deviceType === 'mobile' ? heroVideoMobile : heroVideoDesktop;
 
   useEffect(() => {
     const video = videoRef.current;
@@ -98,7 +106,7 @@ const Hero = () => {
               <div className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 space-y-4">
                 <div className="space-y-2">
                   <h3 className="text-2xl font-semibold leading-relaxed">
-                    Reserva tu lugar en la lista de espera de <span className="brand-font text-gradient-cyan">SAP SAP</span>.
+                    Reserva tu lugar en la lista de prelanzamiento para <span className="text-gradient-cyan">beneficios exclusivos</span>.
                   </h3>
                 </div>
                 <WaitlistForm />
@@ -110,12 +118,13 @@ const Hero = () => {
           <div className="relative h-full min-h-[320px] flex items-center justify-center">
             <div className="relative w-full max-w-[520px] aspect-[9/16] rounded-[2.5rem] overflow-hidden border border-white/10 shadow-[0_0_60px_rgba(229,9,20,0.35)]">
               <video
-                src={heroVideo}
-                autoPlay
+                ref={videoRef}
+                poster={heroPoster}
+                autoPlay={shouldLoadVideo}
                 loop
                 muted={isMuted}
                 playsInline
-                ref={videoRef}
+                preload="none"
                 onPlay={() => setIsPlaying(true)}
                 onPause={() => setIsPlaying(false)}
                 onVolumeChange={() => {
@@ -125,7 +134,11 @@ const Hero = () => {
                   }
                 }}
                 className="h-full w-full object-cover"
-              />
+              >
+                {shouldLoadVideo && (
+                  <source src={videoSrc} type="video/mp4" />
+                )}
+              </video>
               <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/40 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-3 rounded-full bg-black/60 px-5 py-3 backdrop-blur">
                 <button

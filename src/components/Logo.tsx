@@ -7,7 +7,7 @@ interface LogoProps {
 const Logo = ({ className = "", width = 120, height = 40 }: LogoProps) => {
   return (
     <img
-      src="/logodegrade naranja.png"
+      src="/logosapsap.png"
       alt="Sap Sap Logo"
       width={width}
       height={height}
