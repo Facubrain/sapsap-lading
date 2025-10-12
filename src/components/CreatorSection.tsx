@@ -1,15 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import creatorImage from "@/assets/creator-portrait.jpg";
 
-const benefits = [
-  "Alcance global con contenido educativo",
-  "Monetiza tu conocimiento de idiomas",
-  "Herramientas de IA para crear historias",
-  "Comunidad de millones de estudiantes",
-];
-
 const CreatorSection = () => {
+  const { t } = useLanguage();
+  
+  const benefits = [
+    t('benefit.global'),
+    t('benefit.monetize'),
+    t('benefit.ai'),
+    t('benefit.community'),
+  ];
   return (
     <section className="py-24 px-4 bg-light-section text-light-section-foreground">
       <div className="container mx-auto">
@@ -33,8 +35,8 @@ const CreatorSection = () => {
                       <div className="text-sm">Estudiantes</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-bold text-gradient-cyan">$5K+</div>
-                      <div className="text-sm">Promedio/mes</div>
+                      <div className="text-3xl font-bold text-gradient-cyan">+100</div>
+                      <div className="text-sm">Historias</div>
                     </div>
                     <div>
                       <div className="text-3xl font-bold">4.9★</div>
@@ -53,18 +55,16 @@ const CreatorSection = () => {
           {/* Content */}
           <div>
             <div className="inline-block px-4 py-2 rounded-full bg-secondary/10 text-secondary font-semibold mb-4">
-              Para Creadores de Contenido
+              {t('creator.badge')}
             </div>
             
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Convierte tu pasión por los idiomas en una{" "}
-              <span className="text-gradient-red">carrera global</span>
+              {t('creator.title')}{" "}
+              <span className="text-gradient-red">{t('creator.title.highlight')}</span>
             </h2>
             
             <p className="text-xl text-gray-600 mb-8">
-              Únete a nuestra plataforma de creadores y comparte tu conocimiento 
-              con millones de estudiantes en todo el mundo. Crea historias, 
-              genera ingresos y construye tu marca personal.
+              {t('creator.subtitle')}
             </p>
 
             <div className="space-y-4 mb-8">
@@ -82,7 +82,7 @@ const CreatorSection = () => {
               size="lg" 
               className="bg-light-section-foreground text-light-section hover:bg-light-section-foreground/90 text-lg"
             >
-              Conviértete en Creador
+              {t('creator.cta')}
             </Button>
           </div>
         </div>

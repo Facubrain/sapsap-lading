@@ -2,9 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Apple, Pause, Play, Volume2, VolumeX } from "lucide-react";
 import heroVideo from "@/assets/video/jelous-sapsap.mp4";
 import WaitlistForm from "@/components/WaitlistForm";
+import LanguageSwitch from "@/components/LanguageSwitch";
+import Logo from "@/components/Logo";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { useEffect, useRef, useState } from "react";
 
 const Hero = () => {
+  const { language, setLanguage, t } = useLanguage();
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(false);
@@ -47,19 +51,36 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-r from-black via-black/80 to-black">
+      {/* Language Switch in top right */}
+      <div className="absolute top-6 right-6 z-20">
+        <LanguageSwitch 
+          currentLanguage={language} 
+          onLanguageChange={(lang) => setLanguage(lang as any)} 
+        />
+      </div>
+      
       <div className="relative z-10 container mx-auto px-4 py-20">
         <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_1fr]">
           <div>
+            <div className="mb-12 flex items-center justify-center lg:justify-start gap-6">
+              <div className="relative group">
+                <Logo width={220} height={70} className="drop-shadow-xl hover:scale-105 transition-transform duration-300" />
+                
+                {/* Glow effect behind logo */}
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 rounded-lg blur-2xl opacity-60 -z-10 scale-110"></div>
+              </div>
+              
+              <div className="text-4xl md:text-5xl font-bold brand-font">
+                <span className="text-gradient-red">Sap</span><span className="text-gradient-cyan">Sap</span>
+              </div>
+            </div>
+            
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Hacemos que aprender idiomas sea tan{" "}
-              <span className="text-gradient-red">adictivo</span>{" "}
-              como tu{" "}
-              <span className="text-gradient-cyan">serie favorita</span>
+              {t('hero.title')}
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl">
-              Historias interactivas, IA personalizada y aprendizaje real.
-              Domina un nuevo idioma mientras disfrutas cada capítulo.
+              {t('hero.subtitle')}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

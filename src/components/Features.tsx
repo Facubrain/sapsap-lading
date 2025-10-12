@@ -1,38 +1,40 @@
 import { Brain, MessageCircle, Sparkles, Trophy } from "lucide-react";
-
-const features = [
-  {
-    icon: MessageCircle,
-    title: "Historias Cinematográficas",
-    description: "Aprende con historias diseñadas como series de Netflix. Cada capítulo te engancha más que el anterior.",
-  },
-  {
-    icon: Brain,
-    title: "IA Personalizada",
-    description: "Nuestra IA adapta el contenido a tu nivel y estilo de aprendizaje para maximizar tu progreso.",
-  },
-  {
-    icon: Sparkles,
-    title: "Aprendizaje Natural",
-    description: "Olvida la gramática aburrida. Aprende como lo hiciste con tu primer idioma: conversando.",
-  },
-  {
-    icon: Trophy,
-    title: "Resultados Comprobados",
-    description: "95% de nuestros usuarios alcanzan fluidez conversacional en menos de 6 meses.",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Features = () => {
+  const { t } = useLanguage();
+  
+  const features = [
+    {
+      icon: MessageCircle,
+      title: t('feature1.title'),
+      description: t('feature1.desc'),
+    },
+    {
+      icon: Brain,
+      title: t('feature2.title'),
+      description: t('feature2.desc'),
+    },
+    {
+      icon: Sparkles,
+      title: t('feature3.title'),
+      description: t('feature3.desc'),
+    },
+    {
+      icon: Trophy,
+      title: t('feature4.title'),
+      description: t('feature4.desc'),
+    },
+  ];
   return (
     <section className="py-24 px-4 bg-muted/30">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            ¿Por qué <span className="brand-font text-gradient-cyan">Sap Sap</span>?
+            {t('features.why')} <span className="brand-font text-gradient-cyan">Sap Sap</span>?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            La combinación perfecta entre entretenimiento y aprendizaje efectivo
+            {t('features.subtitle')}
           </p>
         </div>
 
