@@ -7,7 +7,7 @@ import coverRioDeJaneiro from "@/assets/covers/rio-de-janeiro-otra-vez.jpeg";
 import coverVanPorLasVegas from "@/assets/covers/van-por-las-vegas.jpeg";
 import coverAtlantaAdventure from "@/assets/covers/Atlanta adventure.jpeg";
 import coverAwakingCordoba from "@/assets/covers/awakingcordoba.jpg";
-import coverAmericanInterpreter from "@/assets/covers/American court interpreter who came to Rio for grad school 3 years ago and stayed. Has been certified for 18 months, works downtown near Tribunal. Takes the work seriously and is building a reputation in the legal community.";
+import coverAmericanInterpreter from "@/assets/covers/American court interpreter who came to Rio for grad school 3 years ago and stayed. Has been certified for 18 months, works downtown near Tribunal. Takes the work seriously and is building a reputation in the legal community..jpeg";
 import coverFormerStreetDog from "@/assets/covers/Former street dog adopted 1 year ago by a marathon runner. First real home. Deeply loyal and terrified of losing this safe place..jpeg";
 import coverCordobaGuitarist from "@/assets/covers/Late 20s guitarista  from Córdoba, Argentina. the band broke up badly (he slept with bassist's girlfriend). Came to Rio to 'reset' and find himself. Told family he's 'exploring music opportunities' but is really running away. Has R$4,000 left, ..jpeg";
 import coverWisconsinWoman from "@/assets/covers/Mid-20s woman from Wisconsin who quit her car showroom job after a panic attack. Saved for 6 months and told family it's 'just a vacation' but is secretly terrified she's unemployable. Has $3,400 left in savings with no backup plan..jpeg";
