@@ -7,6 +7,11 @@ import coverRioDeJaneiro from "@/assets/covers/rio-de-janeiro-otra-vez.jpeg";
 import coverVanPorLasVegas from "@/assets/covers/van-por-las-vegas.jpeg";
 import coverAtlantaAdventure from "@/assets/covers/Atlanta adventure.jpeg";
 import coverAwakingCordoba from "@/assets/covers/awakingcordoba.jpg";
+import coverAmericanInterpreter from "@/assets/covers/American court interpreter who came to Rio for grad school 3 years ago and stayed. Has been certified for 18 months, works downtown near Tribunal. Takes the work seriously and is building a reputation in the legal community.";
+import coverFormerStreetDog from "@/assets/covers/Former street dog adopted 1 year ago by a marathon runner. First real home. Deeply loyal and terrified of losing this safe place..jpeg";
+import coverCordobaGuitarist from "@/assets/covers/Late 20s guitarista  from Córdoba, Argentina. the band broke up badly (he slept with bassist's girlfriend). Came to Rio to 'reset' and find himself. Told family he's 'exploring music opportunities' but is really running away. Has R$4,000 left, ..jpeg";
+import coverWisconsinWoman from "@/assets/covers/Mid-20s woman from Wisconsin who quit her car showroom job after a panic attack. Saved for 6 months and told family it's 'just a vacation' but is secretly terrified she's unemployable. Has $3,400 left in savings with no backup plan..jpeg";
+import coverJuanCordoba from "@/assets/covers/Juan is a 35-year-old electronics technician living with his wife Elena and daughter Martina in Córdoba's General Paz neighborhood. He enjoys Saturday nights playing cards with friends..jpeg";
 import storySpanish from "@/assets/story-spanish.jpg";
 import storyFrench from "@/assets/story-french.jpg";
 import storyEnglish from "@/assets/story-english.jpg";
@@ -60,6 +65,46 @@ const simulations = [
     image: coverAwakingCordoba,
     genre: "Realidad Fragmentada",
     description: "En esta Córdoba cuántica, cada decisión crea nuevas realidades donde perfeccionas tu español argentino."
+  },
+  {
+    title: "Rio Legal Protocol",
+    language: "Português",
+    level: "Avanzado",
+    image: coverAmericanInterpreter,
+    genre: "Drama Jurídico",
+    description: "Navigate the complex world of Brazilian legal proceedings as a certified court interpreter building your professional reputation in downtown Rio's legal district."
+  },
+  {
+    title: "Lealdade Canina",
+    language: "Português",
+    level: "Principiante",
+    image: coverFormerStreetDog,
+    genre: "Drama Emocional",
+    description: "Experience the profound loyalty and fears of a former street dog who found their forever home with a marathon runner in Rio."
+  },
+  {
+    title: "Escape de Córdoba",
+    language: "Español",
+    level: "Intermedio",
+    image: coverCordobaGuitarist,
+    genre: "Drama Musical",
+    description: "Follow a young guitarist from Córdoba who fled to Rio after his band's dramatic breakup, trying to rebuild his life while his savings dwindle."
+  },
+  {
+    title: "Pánico en el Paraíso",
+    language: "English",
+    level: "Intermedio", 
+    image: coverWisconsinWoman,
+    genre: "Thriller Psicológico",
+    description: "Experience the hidden anxiety of a Wisconsin woman on what appears to be a vacation but is actually her escape from a career crisis and uncertain future."
+  },
+  {
+    title: "Noches de Barrio",
+    language: "Español",
+    level: "Intermedio",
+    image: coverJuanCordoba,
+    genre: "Drama Familiar",
+    description: "Join Juan, a 35-year-old electronics technician from General Paz neighborhood in Córdoba, as he navigates family life with wife Elena and daughter Martina while enjoying Saturday card games with friends."
   },
   {
     title: "Madrid Multiverso",
