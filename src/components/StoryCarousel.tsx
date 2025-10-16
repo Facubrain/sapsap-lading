@@ -12,10 +12,6 @@ import coverFormerStreetDog from "@/assets/covers/former-street-dog.jpeg";
 import coverCordobaGuitarist from "@/assets/covers/cordoba-guitarist.jpeg";
 import coverWisconsinWoman from "@/assets/covers/wisconsin-woman.jpeg";
 import coverJuanCordoba from "@/assets/covers/juan-cordoba.jpeg";
-import storySpanish from "@/assets/story-spanish.jpg";
-import storyFrench from "@/assets/story-french.jpg";
-import storyEnglish from "@/assets/story-english.jpg";
-import storyJapanese from "@/assets/story-japanese.jpg";
 
 const simulations = [
   {
@@ -105,38 +101,6 @@ const simulations = [
     image: coverJuanCordoba,
     genre: "Drama Familiar",
     description: "Join Juan, a 35-year-old electronics technician from General Paz neighborhood in Córdoba, as he navigates family life with wife Elena and daughter Martina while enjoying Saturday card games with friends."
-  },
-  {
-    title: "Madrid Multiverso",
-    language: "Español",
-    level: "Intermedio",
-    image: storySpanish,
-    genre: "Simulación Paranormal",
-    description: "Explora múltiples versiones de Madrid donde eventos paranormales te enseñan español de manera única."
-  },
-  {
-    title: "Paris Éternel",
-    language: "Français",
-    level: "Principiante",
-    image: storyFrench,
-    genre: "Bucle Temporal",
-    description: "Revivez le même jour à Paris jusqu'à ce que vous maîtrisiez parfaitement les conversations en français."
-  },
-  {
-    title: "NY Consciousness",
-    language: "English",
-    level: "Avanzado",
-    image: storyEnglish,
-    genre: "Realidad Mental",
-    description: "Dive into the collective consciousness of New York City and practice advanced English through shared experiences."
-  },
-  {
-    title: "Tokyo Matrix",
-    language: "日本語",
-    level: "Intermedio",
-    image: storyJapanese,
-    genre: "Simulación Digital",
-    description: "東京のデジタル世界で日本語会話をマスターしながら、仮想現実と現実の境界を探求します。"
   },
 ];
 
