@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import StoryCarousel from "@/components/StoryCarousel";
-import CreatorSection from "@/components/CreatorSection";
+import CreatorPromo from "@/components/CreatorPromo";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -10,7 +10,7 @@ const Index = () => {
       <Hero />
       <StoryCarousel />
       <Features />
-      <CreatorSection />
+      <CreatorPromo />
       <Footer />
     </div>
   );

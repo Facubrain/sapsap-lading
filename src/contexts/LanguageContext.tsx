@@ -9,6 +9,405 @@ interface LanguageContextType {
   t: (key: string) => string;
 }
 
+const creatorPartnerCopy = {
+  es: {
+    'creator.partner.badge': 'Programa de Creadores SAPSAP',
+    'creator.partner.headline': 'Convierte tus historias de viaje en aventuras de aprendizaje',
+    'creator.partner.subheadline': 'Haz alianza con SAPSAP: nosotros creamos, tú promocionas y ambos ganamos.',
+    'creator.partner.valueChain.0': 'Tus historias de viaje',
+    'creator.partner.valueChain.1': 'Aprendizaje de idiomas inmersivo',
+    'creator.partner.valueChain.2': 'Ingresos pasivos',
+    'creator.partner.primaryCta': 'Hazte socio creador',
+    'creator.partner.secondaryCta': 'Ver historias de ejemplo',
+    'creator.partner.heroCaption': 'Programa de Alianzas con Influencers',
+    'creator.partner.heroDescription': 'Transformamos tus experiencias auténticas de viaje en aventuras interactivas listas para monetizar.',
+
+    'creator.partner.section.whatYouGet.label': 'Lo que obtienen los creadores',
+    'creator.partner.section.whatYouGet.title': 'Un flujo de ingresos listo para tus relatos',
+    'creator.partner.section.whatYouGet.subtitle': 'Comparte tu relato una vez y lanza una experiencia de aprendizaje evergreen para tu comunidad.',
+    'creator.partner.valueProps.0.title': 'Nosotros hacemos el trabajo',
+    'creator.partner.valueProps.0.description': 'Tú compartes tu historia, nosotros la convertimos en una experiencia inmersiva de idiomas.',
+    'creator.partner.valueProps.1.title': 'Tu marca, tu historia',
+    'creator.partner.valueProps.1.description': 'Contenido con tu sello y voz auténtica dentro de la app.',
+    'creator.partner.valueProps.2.title': 'Gana en automático',
+    'creator.partner.valueProps.2.description': 'Sigue tus conversiones con un código único y recibe comisión por cada suscripción.',
+
+    'creator.partner.section.timeline.label': 'Cómo funciona',
+    'creator.partner.section.timeline.title': 'Lanza en tres pasos simples',
+    'creator.partner.section.timeline.subtitle': 'Del brief al ingreso recurrente en menos de tres semanas.',
+    'creator.partner.section.timeline.stepLabel': 'Paso',
+    'creator.partner.timeline.0.title': 'Comparte tu historia',
+    'creator.partner.timeline.0.description': 'Cuéntanos sobre tus viajes en una entrevista guiada o cuestionario de creador.',
+    'creator.partner.timeline.0.duration': '1 hora',
+    'creator.partner.timeline.1.title': 'Diseñamos la experiencia',
+    'creator.partner.timeline.1.description': 'Nuestro equipo crea una historia cinematográfica con actividades, vocabulario y assets.',
+    'creator.partner.timeline.1.duration': '2 semanas',
+    'creator.partner.timeline.2.title': 'Promociona y gana',
+    'creator.partner.timeline.2.description': 'Lanza con tu código único, compártelo y observa crecer las suscripciones.',
+    'creator.partner.timeline.2.duration': 'Continuo',
+
+    'creator.partner.section.profile.label': 'Perfil ideal de socio',
+    'creator.partner.section.profile.title': 'Creadores que brillan en el programa',
+    'creator.partner.profile.0': 'Creadores de viajes con más de 10K seguidores comprometidos',
+    'creator.partner.profile.1': 'Narradores apasionados por los idiomas y la cultura',
+    'creator.partner.profile.2': 'Nómadas digitales que enseñan con experiencias reales',
+    'creator.partner.profile.3': 'Formatos documentales o narrativos de viaje',
+    'creator.partner.profile.4': 'Vloggers, bloggers y educadores con comunidad activa',
+
+    'creator.partner.section.ease.label': 'Cómo lo hacemos fácil',
+    'creator.partner.section.ease.title': 'Pensado para creadores ocupados',
+    'creator.partner.ease.0': 'No necesitas habilidades técnicas, solo tu historia auténtica.',
+    'creator.partner.ease.1': 'Sin producción constante: el equipo SAPSAP guiona y construye.',
+    'creator.partner.ease.2': 'Nos encargamos del setup en la app, localización y desarrollo.',
+    'creator.partner.ease.3': 'Solo promocionas en los canales que ya controlas.',
+    'creator.partner.ease.4': 'Monitorea clics, pruebas y revenue en un dashboard en vivo.',
+    'creator.partner.ease.5': 'Recibe guiones, plantillas y creatividades listas para publicar.',
+
+    'creator.partner.section.socialProof.label': 'Prueba social',
+    'creator.partner.section.socialProof.title': 'Resultados de los primeros socios',
+    'creator.partner.section.socialProof.snapshot.label': 'Historias de muestra',
+    'creator.partner.section.socialProof.snapshot.title': 'Así se ven las experiencias que co-creamos',
+    'creator.partner.section.socialProof.snapshot.subtitle': 'Cada historia mezcla tu voz con misiones inmersivas, vocabulario y contexto cultural.',
+    'creator.partner.section.socialProof.snapshot.earningsLabel': 'Ejemplo de ganancias',
+    'creator.partner.section.socialProof.snapshot.earningsDescription': 'Ejemplo: 320 suscripciones × $5.75 de comisión promedio mensual.',
+
+    'creator.partner.section.form.badge': 'Aplica hoy',
+    'creator.partner.section.form.title': '¿Listo para monetizar tus historias de viaje?',
+    'creator.partner.section.form.subtitle': 'Cuéntanos de tu audiencia y la historia que quieres lanzar; respondemos en 3 días hábiles.',
+    'creator.partner.section.form.bullet.0': 'Revisión prioritaria para comunidades listas para lanzar.',
+    'creator.partner.section.form.bullet.1': 'Incluye assets co-brandeados, calendario y checklist de lanzamiento.',
+    'creator.partner.section.form.bullet.2': 'Pagos de comisión mensuales con dashboard transparente.',
+    'creator.partner.section.form.disclaimer': 'Al aplicar aceptas recibir emails de onboarding del Programa de Creadores SAPSAP.',
+
+    'creator.partner.form.fullName.label': 'Nombre completo',
+    'creator.partner.form.fullName.error': 'Comparte tu nombre completo.',
+    'creator.partner.form.email.label': 'Correo electrónico',
+    'creator.partner.form.email.error': 'Ingresa un correo válido.',
+    'creator.partner.form.handle.label': 'Usuario de Instagram/TikTok',
+    'creator.partner.form.handle.error': 'Añade al menos un usuario social.',
+    'creator.partner.form.platform.label': 'Plataforma principal',
+    'creator.partner.form.platform.placeholder': 'Selecciona plataforma',
+    'creator.partner.form.platform.error': 'Selecciona tu plataforma principal.',
+    'creator.partner.form.niche.label': 'Nicho de viaje',
+    'creator.partner.form.niche.error': 'Cuéntanos tu nicho principal.',
+    'creator.partner.form.followerRange.label': 'Rango de seguidores',
+    'creator.partner.form.followerRange.placeholder': 'Selecciona rango',
+    'creator.partner.form.followerRange.error': 'Selecciona un rango de seguidores.',
+    'creator.partner.form.message.label': '¿Por qué te interesa?',
+    'creator.partner.form.message.placeholder': 'Comparte la historia que quieres traer a SAPSAP y cómo planeas promocionarla.',
+    'creator.partner.form.message.error': 'Cuéntanos por qué te interesa (mínimo 10 caracteres).',
+    'creator.partner.form.message.max': 'Mantén tu mensaje debajo de 500 caracteres.',
+    'creator.partner.form.submit': 'Enviar aplicación',
+    'creator.partner.form.submitting': 'Enviando aplicación…',
+    'creator.partner.form.configMissing.title': 'Formulario no disponible',
+    'creator.partner.form.configMissing.description': 'Define VITE_INFLUENCER_APPLICATION_ENDPOINT para habilitar el envío.',
+    'creator.partner.form.genericError': 'Algo salió mal. Intenta nuevamente en unos minutos.',
+    'creator.partner.form.error.title': 'No pudimos enviar tu aplicación',
+
+    'creator.partner.success.title': 'Aplicación recibida',
+    'creator.partner.success.subtitle': 'Gracias por postular al Programa de Creadores SAPSAP.',
+    'creator.partner.success.body': 'Nuestro equipo revisará tu aplicación y te contactará dentro de 3 días hábiles. Revisa también tu carpeta de spam.',
+    'creator.partner.success.cta': 'Cerrar',
+  },
+  en: {
+    'creator.partner.badge': 'Creator Partner Program',
+    'creator.partner.headline': 'Turn Your Travel Stories Into Learning Adventures',
+    'creator.partner.subheadline': 'Partner with SAPSAP: we create, you promote, and you earn recurring revenue.',
+    'creator.partner.valueChain.0': 'Your Travel Stories',
+    'creator.partner.valueChain.1': 'Immersive Language Learning',
+    'creator.partner.valueChain.2': 'Passive Income',
+    'creator.partner.primaryCta': 'Become a Creator Partner',
+    'creator.partner.secondaryCta': 'See Example Stories',
+    'creator.partner.heroCaption': 'Influencer Partnership Program',
+    'creator.partner.heroDescription': 'We transform your authentic travel experiences into interactive language journeys ready to monetize.',
+
+    'creator.partner.section.whatYouGet.label': 'What Influencers Get',
+    'creator.partner.section.whatYouGet.title': 'A ready-made revenue stream for storytellers',
+    'creator.partner.section.whatYouGet.subtitle': 'Share your travel narrative once and launch an evergreen learning experience for your community.',
+    'creator.partner.valueProps.0.title': 'We Do The Work',
+    'creator.partner.valueProps.0.description': 'You share your story, we transform it into an immersive language experience.',
+    'creator.partner.valueProps.1.title': 'Your Brand, Your Story',
+    'creator.partner.valueProps.1.description': 'Custom-branded content featuring your authentic travel moments and voice.',
+    'creator.partner.valueProps.2.title': 'Earn Passively',
+    'creator.partner.valueProps.2.description': 'Track conversions with your referral code and earn on every subscription.',
+
+    'creator.partner.section.timeline.label': 'How It Works',
+    'creator.partner.section.timeline.title': 'Launch in three simple steps',
+    'creator.partner.section.timeline.subtitle': 'From interview to recurring income in under three weeks.',
+    'creator.partner.section.timeline.stepLabel': 'Step',
+    'creator.partner.timeline.0.title': 'Share Your Story',
+    'creator.partner.timeline.0.description': 'Tell us about your travels through a guided interview or creator questionnaire.',
+    'creator.partner.timeline.0.duration': '1 hour',
+    'creator.partner.timeline.1.title': 'We Build The Experience',
+    'creator.partner.timeline.1.description': 'Our learning designers craft a cinematic, multilingual story with built-in activities and assets.',
+    'creator.partner.timeline.1.duration': '2 weeks',
+    'creator.partner.timeline.2.title': 'Promote & Earn',
+    'creator.partner.timeline.2.description': 'Launch with your unique referral code, share with your audience, and watch subscriptions grow.',
+    'creator.partner.timeline.2.duration': 'Ongoing',
+
+    'creator.partner.section.profile.label': 'Ideal Partner Profile',
+    'creator.partner.section.profile.title': 'Creators who thrive in our program',
+    'creator.partner.profile.0': 'Travel content creators with 10K+ engaged followers',
+    'creator.partner.profile.1': 'Language-loving storytellers with a cultural lens',
+    'creator.partner.profile.2': 'Digital nomads who teach through lived experiences',
+    'creator.partner.profile.3': 'Creators with documentary-style or narrative travel formats',
+    'creator.partner.profile.4': 'Travel vloggers, bloggers, and community-led educators',
+
+    'creator.partner.section.ease.label': 'What Makes It Easy',
+    'creator.partner.section.ease.title': 'Designed for busy creators',
+    'creator.partner.ease.0': 'No technical skills needed—just your authentic story.',
+    'creator.partner.ease.1': 'No ongoing production—the SAPSAP team scripts and builds the experience.',
+    'creator.partner.ease.2': 'We handle app setup, localisation, and story development end-to-end.',
+    'creator.partner.ease.3': 'You promote through the channels you already own.',
+    'creator.partner.ease.4': 'Track clicks, trials, and revenue with a live dashboard.',
+    'creator.partner.ease.5': 'Receive plug-and-play promo scripts, templates, and visuals.',
+
+    'creator.partner.section.socialProof.label': 'Social Proof',
+    'creator.partner.section.socialProof.title': 'Early creator wins',
+    'creator.partner.section.socialProof.snapshot.label': 'Sample Stories',
+    'creator.partner.section.socialProof.snapshot.title': 'Preview the experiences we co-create',
+    'creator.partner.section.socialProof.snapshot.subtitle': 'Each story blends your voice with immersive tasks, vocabulary boosts, and cultural deep dives.',
+    'creator.partner.section.socialProof.snapshot.earningsLabel': 'Earnings Snapshot',
+    'creator.partner.section.socialProof.snapshot.earningsDescription': 'Example: 320 subscribers × $5.75 average commission per month.',
+
+    'creator.partner.section.form.badge': 'Apply Today',
+    'creator.partner.section.form.title': 'Ready to monetise your travel stories?',
+    'creator.partner.section.form.subtitle': 'Tell us about your audience and dream story—our partnerships team replies within three business days.',
+    'creator.partner.section.form.bullet.0': 'Priority reviews for creators with launch-ready communities.',
+    'creator.partner.section.form.bullet.1': 'Co-branded assets, promo calendar, and launch checklist included.',
+    'creator.partner.section.form.bullet.2': 'Monthly commission payouts with transparent dashboards.',
+    'creator.partner.section.form.disclaimer': 'By applying you agree to receive onboarding emails about the SAPSAP Creator Program.',
+
+    'creator.partner.form.fullName.label': 'Full Name',
+    'creator.partner.form.fullName.error': 'Please share your full name.',
+    'creator.partner.form.email.label': 'Email',
+    'creator.partner.form.email.error': 'Enter a valid email address.',
+    'creator.partner.form.handle.label': 'Instagram/TikTok Handle',
+    'creator.partner.form.handle.error': 'Add at least one social handle.',
+    'creator.partner.form.platform.label': 'Primary Platform',
+    'creator.partner.form.platform.placeholder': 'Select platform',
+    'creator.partner.form.platform.error': 'Select your primary platform.',
+    'creator.partner.form.niche.label': 'Main Travel Niche',
+    'creator.partner.form.niche.error': 'Tell us about your main niche.',
+    'creator.partner.form.followerRange.label': 'Follower Count Range',
+    'creator.partner.form.followerRange.placeholder': 'Select follower range',
+    'creator.partner.form.followerRange.error': 'Select a follower range.',
+    'creator.partner.form.message.label': 'Why You\'re Interested',
+    'creator.partner.form.message.placeholder': 'Share the story you\'d love to bring to SAPSAP and how you plan to promote it.',
+    'creator.partner.form.message.error': 'Tell us why you\'re interested (10+ characters).',
+    'creator.partner.form.message.max': 'Keep your message under 500 characters.',
+    'creator.partner.form.submit': 'Submit Application',
+    'creator.partner.form.submitting': 'Sending application…',
+    'creator.partner.form.configMissing.title': 'Form temporarily unavailable',
+    'creator.partner.form.configMissing.description': 'Set VITE_INFLUENCER_APPLICATION_ENDPOINT to enable submissions.',
+    'creator.partner.form.genericError': 'Something went wrong. Please try again shortly.',
+    'creator.partner.form.error.title': 'We couldn\'t submit your application',
+
+    'creator.partner.success.title': 'Application received',
+    'creator.partner.success.subtitle': 'Thank you for applying to the SAPSAP Creator Program.',
+    'creator.partner.success.body': 'Our partnerships team will review your application and reach out within three business days. Watch your inbox (and spam) for next steps.',
+    'creator.partner.success.cta': 'Close',
+  },
+  fr: {
+    'creator.partner.badge': 'Programme Partenaires Créateurs',
+    'creator.partner.headline': 'Transformez vos récits de voyage en aventures linguistiques',
+    'creator.partner.subheadline': 'Partenariat avec SAPSAP : nous créons, vous promouvez, et vous générez des revenus récurrents.',
+    'creator.partner.valueChain.0': 'Vos récits de voyage',
+    'creator.partner.valueChain.1': 'Apprentissage linguistique immersif',
+    'creator.partner.valueChain.2': 'Revenus passifs',
+    'creator.partner.primaryCta': 'Devenir partenaire créateur',
+    'creator.partner.secondaryCta': 'Voir des histoires exemples',
+    'creator.partner.heroCaption': 'Programme de partenariat influenceurs',
+    'creator.partner.heroDescription': 'Nous transformons vos expériences de voyage authentiques en parcours interactifs prêts à être monétisés.',
+
+    'creator.partner.section.whatYouGet.label': 'Ce que reçoivent les créateurs',
+    'creator.partner.section.whatYouGet.title': 'Un flux de revenus clé en main pour les conteurs',
+    'creator.partner.section.whatYouGet.subtitle': 'Partagez votre histoire une fois et offrez à votre communauté une expérience d\'apprentissage continue.',
+    'creator.partner.valueProps.0.title': 'Nous faisons le travail',
+    'creator.partner.valueProps.0.description': 'Vous partagez votre récit, nous le transformons en expérience immersive.',
+    'creator.partner.valueProps.1.title': 'Votre marque, votre histoire',
+    'creator.partner.valueProps.1.description': 'Contenu co-brandé qui met en avant votre voix et vos moments authentiques.',
+    'creator.partner.valueProps.2.title': 'Gagnez en continu',
+    'creator.partner.valueProps.2.description': 'Suivez vos conversions avec un code unique et gagnez sur chaque abonnement.',
+
+    'creator.partner.section.timeline.label': 'Comment ça marche',
+    'creator.partner.section.timeline.title': 'Lancement en trois étapes simples',
+    'creator.partner.section.timeline.subtitle': 'De l\'entretien aux revenus récurrents en moins de trois semaines.',
+    'creator.partner.section.timeline.stepLabel': 'Étape',
+    'creator.partner.timeline.0.title': 'Partagez votre histoire',
+    'creator.partner.timeline.0.description': 'Racontez-nous vos voyages via un entretien guidé ou un questionnaire.',
+    'creator.partner.timeline.0.duration': '1 heure',
+    'creator.partner.timeline.1.title': 'Nous créons l\'expérience',
+    'creator.partner.timeline.1.description': 'Nos concepteurs élaborent une histoire cinématographique multilingue avec activités incluses.',
+    'creator.partner.timeline.1.duration': '2 semaines',
+    'creator.partner.timeline.2.title': 'Promouvoir & gagner',
+    'creator.partner.timeline.2.description': 'Lancez avec votre code unique, partagez-le et regardez vos abonnements croître.',
+    'creator.partner.timeline.2.duration': 'En continu',
+
+    'creator.partner.section.profile.label': 'Profil partenaire idéal',
+    'creator.partner.section.profile.title': 'Les créateurs qui s\'épanouissent dans notre programme',
+    'creator.partner.profile.0': 'Créateurs voyage avec 10K+ abonnés engagés',
+    'creator.partner.profile.1': 'Narrateurs passionnés de langues et de culture',
+    'creator.partner.profile.2': 'Nomades digitaux qui enseignent à partir du vécu',
+    'creator.partner.profile.3': 'Formats voyage narratifs ou documentaires',
+    'creator.partner.profile.4': 'Vloggers, blogueurs et éducateurs communautaires',
+
+    'creator.partner.section.ease.label': 'Pourquoi c\'est simple',
+    'creator.partner.section.ease.title': 'Conçu pour les créateurs occupés',
+    'creator.partner.ease.0': 'Aucune compétence technique requise : partagez simplement votre histoire.',
+    'creator.partner.ease.1': 'Aucune production continue : l\'équipe SAPSAP scénarise et construit.',
+    'creator.partner.ease.2': 'Nous gérons la mise en place, la localisation et le développement.',
+    'creator.partner.ease.3': 'Vous promouvez via vos canaux existants.',
+    'creator.partner.ease.4': 'Suivez clics, essais et revenus sur un tableau de bord en temps réel.',
+    'creator.partner.ease.5': 'Recevez scripts, modèles et visuels prêts à l\'emploi.',
+
+    'creator.partner.section.socialProof.label': 'Preuves sociales',
+    'creator.partner.section.socialProof.title': 'Résultats des premiers partenaires',
+    'creator.partner.section.socialProof.snapshot.label': 'Histoires exemples',
+    'creator.partner.section.socialProof.snapshot.title': 'Aperçu des expériences co-créées',
+    'creator.partner.section.socialProof.snapshot.subtitle': 'Chaque histoire mêle votre voix à des missions immersives et du vocabulaire contextualisé.',
+    'creator.partner.section.socialProof.snapshot.earningsLabel': 'Projection de gains',
+    'creator.partner.section.socialProof.snapshot.earningsDescription': 'Exemple : 320 abonnés × 5,75 $ de commission mensuelle moyenne.',
+
+    'creator.partner.section.form.badge': 'Postuler',
+    'creator.partner.section.form.title': 'Prêt à monétiser vos récits de voyage ?',
+    'creator.partner.section.form.subtitle': 'Parlez-nous de votre audience et de l\'histoire rêvée ; réponse sous 3 jours ouvrés.',
+    'creator.partner.section.form.bullet.0': 'Revue prioritaire pour les communautés prêtes à lancer.',
+    'creator.partner.section.form.bullet.1': 'Assets co-marqués, calendrier promo et checklist fournis.',
+    'creator.partner.section.form.bullet.2': 'Commissions mensuelles avec tableau de bord transparent.',
+    'creator.partner.section.form.disclaimer': 'En postulant vous acceptez de recevoir les emails d\'onboarding du programme créateurs SAPSAP.',
+
+    'creator.partner.form.fullName.label': 'Nom complet',
+    'creator.partner.form.fullName.error': 'Indiquez votre nom complet.',
+    'creator.partner.form.email.label': 'E-mail',
+    'creator.partner.form.email.error': 'Saisissez une adresse e-mail valide.',
+    'creator.partner.form.handle.label': 'Pseudo Instagram/TikTok',
+    'creator.partner.form.handle.error': 'Ajoutez au moins un pseudo social.',
+    'creator.partner.form.platform.label': 'Plateforme principale',
+    'creator.partner.form.platform.placeholder': 'Choisir une plateforme',
+    'creator.partner.form.platform.error': 'Sélectionnez votre plateforme principale.',
+    'creator.partner.form.niche.label': 'Niche de voyage',
+    'creator.partner.form.niche.error': 'Décrivez votre niche principale.',
+    'creator.partner.form.followerRange.label': 'Tranche d\'abonnés',
+    'creator.partner.form.followerRange.placeholder': 'Choisir une tranche',
+    'creator.partner.form.followerRange.error': 'Sélectionnez une tranche d\'abonnés.',
+    'creator.partner.form.message.label': 'Pourquoi êtes-vous intéressé·e ?',
+    'creator.partner.form.message.placeholder': 'Partagez l\'histoire que vous souhaitez porter sur SAPSAP et votre plan de promotion.',
+    'creator.partner.form.message.error': 'Expliquez-nous votre intérêt (10 caractères minimum).',
+    'creator.partner.form.message.max': 'Limitez votre message à 500 caractères.',
+    'creator.partner.form.submit': 'Envoyer la candidature',
+    'creator.partner.form.submitting': 'Envoi de la candidature…',
+    'creator.partner.form.configMissing.title': 'Formulaire temporairement indisponible',
+    'creator.partner.form.configMissing.description': 'Définissez VITE_INFLUENCER_APPLICATION_ENDPOINT pour activer l\'envoi.',
+    'creator.partner.form.genericError': 'Un problème est survenu. Réessayez dans quelques instants.',
+    'creator.partner.form.error.title': 'Impossible d\'envoyer votre candidature',
+
+    'creator.partner.success.title': 'Candidature reçue',
+    'creator.partner.success.subtitle': 'Merci d\'avoir rejoint le programme créateurs SAPSAP.',
+    'creator.partner.success.body': 'Notre équipe partnerships vous répondra sous 3 jours ouvrés. Surveillez votre boîte mail et vos spams.',
+    'creator.partner.success.cta': 'Fermer',
+  },
+  pt: {
+    'creator.partner.badge': 'Programa de Parceiros Criadores',
+    'creator.partner.headline': 'Transforme suas histórias de viagem em aventuras de aprendizagem',
+    'creator.partner.subheadline': 'Seja parceiro da SAPSAP: nós criamos, você promove e recebe receita recorrente.',
+    'creator.partner.valueChain.0': 'Suas histórias de viagem',
+    'creator.partner.valueChain.1': 'Aprendizado de idiomas imersivo',
+    'creator.partner.valueChain.2': 'Renda passiva',
+    'creator.partner.primaryCta': 'Torne-se parceiro criador',
+    'creator.partner.secondaryCta': 'Ver histórias de exemplo',
+    'creator.partner.heroCaption': 'Programa de Parcerias com Influenciadores',
+    'creator.partner.heroDescription': 'Transformamos suas experiências autênticas de viagem em jornadas interativas prontas para monetizar.',
+
+    'creator.partner.section.whatYouGet.label': 'O que os criadores recebem',
+    'creator.partner.section.whatYouGet.title': 'Um fluxo de receita pronto para quem conta histórias',
+    'creator.partner.section.whatYouGet.subtitle': 'Compartilhe sua narrativa uma vez e lance uma experiência perene para sua comunidade.',
+    'creator.partner.valueProps.0.title': 'Nós fazemos o trabalho',
+    'creator.partner.valueProps.0.description': 'Você compartilha a história e nós a transformamos em uma experiência imersiva.',
+    'creator.partner.valueProps.1.title': 'Sua marca, sua história',
+    'creator.partner.valueProps.1.description': 'Conteúdo com seu branding e voz autêntica dentro do app.',
+    'creator.partner.valueProps.2.title': 'Ganhe de forma passiva',
+    'creator.partner.valueProps.2.description': 'Acompanhe as conversões com seu código e receba comissão em cada assinatura.',
+
+    'creator.partner.section.timeline.label': 'Como funciona',
+    'creator.partner.section.timeline.title': 'Lance em três passos simples',
+    'creator.partner.section.timeline.subtitle': 'Da entrevista à receita recorrente em menos de três semanas.',
+    'creator.partner.section.timeline.stepLabel': 'Etapa',
+    'creator.partner.timeline.0.title': 'Compartilhe sua história',
+    'creator.partner.timeline.0.description': 'Conte sobre suas viagens em uma entrevista guiada ou questionário.',
+    'creator.partner.timeline.0.duration': '1 hora',
+    'creator.partner.timeline.1.title': 'Criamos a experiência',
+    'creator.partner.timeline.1.description': 'Nossa equipe produz uma história cinematográfica multilíngue com atividades.',
+    'creator.partner.timeline.1.duration': '2 semanas',
+    'creator.partner.timeline.2.title': 'Promova e ganhe',
+    'creator.partner.timeline.2.description': 'Lance com seu código exclusivo, compartilhe e acompanhe as assinaturas crescerem.',
+    'creator.partner.timeline.2.duration': 'Contínuo',
+
+    'creator.partner.section.profile.label': 'Perfil ideal de parceiro',
+    'creator.partner.section.profile.title': 'Criadores que prosperam no programa',
+    'creator.partner.profile.0': 'Criadores de viagem com 10K+ seguidores engajados',
+    'creator.partner.profile.1': 'Narradores apaixonados por idiomas e cultura',
+    'creator.partner.profile.2': 'Nômades digitais que ensinam por meio de vivências reais',
+    'creator.partner.profile.3': 'Formatos narrativos ou documentais de viagem',
+    'creator.partner.profile.4': 'Vlogueiros, blogueiros e educadores com comunidades ativas',
+
+    'creator.partner.section.ease.label': 'O que facilita o processo',
+    'creator.partner.section.ease.title': 'Pensado para criadores ocupados',
+    'creator.partner.ease.0': 'Sem necessidade de habilidades técnicas — só sua história.',
+    'creator.partner.ease.1': 'Sem produção contínua — a equipe SAPSAP roteiriza e constrói.',
+    'creator.partner.ease.2': 'Cuidamos do setup no app, da localização e do desenvolvimento.',
+    'creator.partner.ease.3': 'Você promove nos canais que já domina.',
+    'creator.partner.ease.4': 'Acompanhe cliques, testes e receita em um painel em tempo real.',
+    'creator.partner.ease.5': 'Receba roteiros, modelos e criativos prontos para uso.',
+
+    'creator.partner.section.socialProof.label': 'Prova social',
+    'creator.partner.section.socialProof.title': 'Resultados iniciais dos parceiros',
+    'creator.partner.section.socialProof.snapshot.label': 'Histórias destaque',
+    'creator.partner.section.socialProof.snapshot.title': 'Veja exemplos das experiências co-criadas',
+    'creator.partner.section.socialProof.snapshot.subtitle': 'Cada história une sua voz a missões imersivas e vocabulário contextualizado.',
+    'creator.partner.section.socialProof.snapshot.earningsLabel': 'Visão de ganhos',
+    'creator.partner.section.socialProof.snapshot.earningsDescription': 'Exemplo: 320 assinaturas × US$ 5,75 de comissão média mensal.',
+
+    'creator.partner.section.form.badge': 'Candidate-se',
+    'creator.partner.section.form.title': 'Pronto para monetizar suas histórias de viagem?',
+    'creator.partner.section.form.subtitle': 'Fale sobre sua audiência e a história dos sonhos; respondemos em até 3 dias úteis.',
+    'creator.partner.section.form.bullet.0': 'Análise prioritária para comunidades prontas para lançar.',
+    'creator.partner.section.form.bullet.1': 'Inclui assets co-branded, calendário e checklist de lançamento.',
+    'creator.partner.section.form.bullet.2': 'Pagamentos mensais com painel transparente.',
+    'creator.partner.section.form.disclaimer': 'Ao se candidatar você concorda em receber e-mails de onboarding do Programa de Criadores SAPSAP.',
+
+    'creator.partner.form.fullName.label': 'Nome completo',
+    'creator.partner.form.fullName.error': 'Informe seu nome completo.',
+    'creator.partner.form.email.label': 'E-mail',
+    'creator.partner.form.email.error': 'Informe um e-mail válido.',
+    'creator.partner.form.handle.label': 'Usuário do Instagram/TikTok',
+    'creator.partner.form.handle.error': 'Adicione pelo menos um usuário social.',
+    'creator.partner.form.platform.label': 'Plataforma principal',
+    'creator.partner.form.platform.placeholder': 'Selecione uma plataforma',
+    'creator.partner.form.platform.error': 'Selecione sua plataforma principal.',
+    'creator.partner.form.niche.label': 'Nicho de viagem',
+    'creator.partner.form.niche.error': 'Conte qual é seu nicho principal.',
+    'creator.partner.form.followerRange.label': 'Faixa de seguidores',
+    'creator.partner.form.followerRange.placeholder': 'Selecione a faixa',
+    'creator.partner.form.followerRange.error': 'Escolha uma faixa de seguidores.',
+    'creator.partner.form.message.label': 'Por que tem interesse?',
+    'creator.partner.form.message.placeholder': 'Compartilhe a história que quer levar para a SAPSAP e seu plano de promoção.',
+    'creator.partner.form.message.error': 'Conte por que tem interesse (mínimo 10 caracteres).',
+    'creator.partner.form.message.max': 'Mantenha a mensagem abaixo de 500 caracteres.',
+    'creator.partner.form.submit': 'Enviar candidatura',
+    'creator.partner.form.submitting': 'Enviando candidatura…',
+    'creator.partner.form.configMissing.title': 'Formulário indisponível',
+    'creator.partner.form.configMissing.description': 'Defina VITE_INFLUENCER_APPLICATION_ENDPOINT para habilitar o envio.',
+    'creator.partner.form.genericError': 'Ocorreu um erro. Tente novamente em instantes.',
+    'creator.partner.form.error.title': 'Não foi possível enviar sua candidatura',
+
+    'creator.partner.success.title': 'Candidatura recebida',
+    'creator.partner.success.subtitle': 'Obrigado por se inscrever no Programa de Criadores SAPSAP.',
+    'creator.partner.success.body': 'Nossa equipe entrará em contato em até 3 dias úteis. Confira também a pasta de spam.',
+    'creator.partner.success.cta': 'Fechar',
+  },
+};
+
 const translations = {
   es: {
     // Hero Section
@@ -16,32 +415,25 @@ const translations = {
     'hero.subtitle': 'Sumérgete en mundos virtuales donde cada conversación te acerca a la fluidez. Practica idiomas de forma natural a través de simulaciones interactivas.',
     'hero.cta': 'Comenzar Aventura',
     'hero.waitlist': 'Únete a la Lista de Espera',
-    
+
     // Story Carousel
     'stories.title': 'Sumérgete en Nuestras',
     'stories.title.highlight': 'Simulaciones',
     'stories.subtitle': 'Cada simulación es una realidad paralela diseñada para sumergirte completamente en mundos donde vives el idioma',
-    
-    // Creator Section
-    'creator.badge': 'Para Creadores de Contenido',
-    'creator.title': 'Comparte tu experiencia y transformala en',
-    'creator.title.highlight': 'historias',
-    'creator.subtitle': 'Deja que tus experiencias se conviertan en historias que conecten con audiencias globales y fortalezcan tu marca personal.',
-    'creator.cta': 'Conviértete en Creador',
-    
+
     // Features
     'features.title': 'Todo lo que necesitas para dominar idiomas',
     'features.subtitle': 'La combinación perfecta entre entretenimiento y aprendizaje efectivo',
     'features.why': '¿Por qué',
     'feature1.title': 'Historias Cinematográficas',
     'feature1.desc': 'Aprende con historias diseñadas como series de Netflix. Cada capítulo te engancha más que el anterior.',
-    'feature2.title': 'IA Personalizada', 
+    'feature2.title': 'IA Personalizada',
     'feature2.desc': 'Nuestra IA adapta el contenido a tu nivel y estilo de aprendizaje para maximizar tu progreso.',
     'feature3.title': 'Aprendizaje Natural',
     'feature3.desc': 'Olvida la gramática aburrida. Aprende como lo hiciste con tu primer idioma: conversando.',
     'feature4.title': 'Resultados Comprobados',
     'feature4.desc': '95% de nuestros usuarios alcanzan fluidez conversacional en menos de 6 meses.',
-    
+
     // Footer
     'footer.description': 'Aprende idiomas de forma adictiva y efectiva',
     'footer.product': 'Producto',
@@ -63,12 +455,14 @@ const translations = {
     'footer.privacy': 'Privacidad',
     'footer.terms': 'Términos',
     'footer.cookies': 'Cookies',
-    
+
     // Benefits
     'benefit.global': 'Alcance global con contenido educativo',
-    'benefit.monetize': 'Monetiza tu conocimiento de idiomas', 
+    'benefit.monetize': 'Monetiza tu conocimiento de idiomas',
     'benefit.ai': 'Herramientas de IA para crear historias',
     'benefit.community': 'Comunidad de millones de estudiantes',
+
+    ...creatorPartnerCopy.es,
   },
   en: {
     // Hero Section
@@ -76,19 +470,12 @@ const translations = {
     'hero.subtitle': 'Dive into virtual worlds where every conversation brings you closer to fluency. Practice languages naturally through interactive simulations.',
     'hero.cta': 'Start Adventure',
     'hero.waitlist': 'Join Waitlist',
-    
+
     // Story Carousel
     'stories.title': 'Dive into Our',
     'stories.title.highlight': 'Simulations',
     'stories.subtitle': 'Each simulation is a parallel reality designed to completely immerse you in worlds where you live the language',
-    
-    // Creator Section
-    'creator.badge': 'For Content Creators',
-    'creator.title': 'Share your experience and transform it into',
-    'creator.title.highlight': 'stories',
-    'creator.subtitle': 'Let your experiences become stories that connect with global audiences and strengthen your personal brand.',
-    'creator.cta': 'Become a Creator',
-    
+
     // Features
     'features.title': 'Everything you need to master languages',
     'features.subtitle': 'The perfect combination of entertainment and effective learning',
@@ -101,7 +488,7 @@ const translations = {
     'feature3.desc': 'Forget boring grammar. Learn like you did with your first language: by conversing.',
     'feature4.title': 'Proven Results',
     'feature4.desc': '95% of our users reach conversational fluency in less than 6 months.',
-    
+
     // Footer
     'footer.description': 'Learn languages in an addictive and effective way',
     'footer.product': 'Product',
@@ -123,12 +510,14 @@ const translations = {
     'footer.privacy': 'Privacy',
     'footer.terms': 'Terms',
     'footer.cookies': 'Cookies',
-    
+
     // Benefits
     'benefit.global': 'Global reach with educational content',
     'benefit.monetize': 'Monetize your language knowledge',
     'benefit.ai': 'AI tools to create stories',
     'benefit.community': 'Community of millions of students',
+
+    ...creatorPartnerCopy.en,
   },
   fr: {
     // Hero Section
@@ -136,32 +525,25 @@ const translations = {
     'hero.subtitle': 'Plongez dans des mondes virtuels où chaque conversation vous rapproche de la maîtrise. Pratiquez les langues naturellement grâce à des simulations interactives.',
     'hero.cta': 'Commencer l\'Aventure',
     'hero.waitlist': 'Rejoindre la Liste d\'Attente',
-    
+
     // Story Carousel
     'stories.title': 'Plongez dans Nos',
     'stories.title.highlight': 'Simulations',
     'stories.subtitle': 'Chaque simulation est une réalité parallèle conçue pour vous immerger complètement dans des mondes où vous vivez la langue',
-    
-    // Creator Section
-    'creator.badge': 'Pour les Créateurs de Contenu',
-    'creator.title': 'Partagez votre expérience et transformez-la en',
-    'creator.title.highlight': 'histoires',
-    'creator.subtitle': 'Laissez vos expériences devenir des histoires qui se connectent avec des audiences mondiales et renforcent votre marque personnelle.',
-    'creator.cta': 'Devenir Créateur',
-    
+
     // Features
     'features.title': 'Tout ce dont vous avez besoin pour maîtriser les langues',
     'features.subtitle': 'La combinaison parfaite entre divertissement et apprentissage efficace',
     'features.why': 'Pourquoi',
     'feature1.title': 'Histoires Cinématographiques',
-    'feature1.desc': 'Apprenez avec des histoires conçues comme des séries Netflix. Chaque chapitre vous accroche plus que le précédent.',
+    'feature1.desc': 'Apprenez avec des histoires conçues comme des séries Netflix. Chaque épisode vous captive plus que le précédent.',
     'feature2.title': 'IA Personnalisée',
     'feature2.desc': 'Notre IA adapte le contenu à votre niveau et style d\'apprentissage pour maximiser vos progrès.',
     'feature3.title': 'Apprentissage Naturel',
-    'feature3.desc': 'Oubliez la grammaire ennuyeuse. Apprenez comme vous l\'avez fait avec votre première langue: en conversant.',
+    'feature3.desc': 'Oubliez la grammaire ennuyeuse. Apprenez comme pour votre première langue : en conversant.',
     'feature4.title': 'Résultats Prouvés',
-    'feature4.desc': '95% de nos utilisateurs atteignent la fluidité conversationnelle en moins de 6 mois.',
-    
+    'feature4.desc': '95 % de nos utilisateurs atteignent la fluidité conversationnelle en moins de 6 mois.',
+
     // Footer
     'footer.description': 'Apprenez les langues de manière addictive et efficace',
     'footer.product': 'Produit',
@@ -183,12 +565,14 @@ const translations = {
     'footer.privacy': 'Confidentialité',
     'footer.terms': 'Conditions',
     'footer.cookies': 'Cookies',
-    
+
     // Benefits
     'benefit.global': 'Portée mondiale avec du contenu éducatif',
     'benefit.monetize': 'Monétisez vos connaissances linguistiques',
     'benefit.ai': 'Outils IA pour créer des histoires',
     'benefit.community': 'Communauté de millions d\'étudiants',
+
+    ...creatorPartnerCopy.fr,
   },
   pt: {
     // Hero Section
@@ -196,32 +580,25 @@ const translations = {
     'hero.subtitle': 'Mergulhe em mundos virtuais onde cada conversa te aproxima da fluência. Pratique idiomas naturalmente através de simulações interativas.',
     'hero.cta': 'Começar Aventura',
     'hero.waitlist': 'Entrar na Lista de Espera',
-    
+
     // Story Carousel
     'stories.title': 'Mergulhe em Nossas',
     'stories.title.highlight': 'Simulações',
     'stories.subtitle': 'Cada simulação é uma realidade paralela projetada para te imergir completamente em mundos onde você vive o idioma',
-    
-    // Creator Section
-    'creator.badge': 'Para Criadores de Conteúdo',
-    'creator.title': 'Compartilhe sua experiência e transforme-a em',
-    'creator.title.highlight': 'histórias',
-    'creator.subtitle': 'Deixe suas experiências se tornarem histórias que se conectam com audiências globais e fortalecem sua marca pessoal.',
-    'creator.cta': 'Tornar-se Criador',
-    
+
     // Features
     'features.title': 'Tudo que você precisa para dominar idiomas',
     'features.subtitle': 'A combinação perfeita entre entretenimento e aprendizado eficaz',
     'features.why': 'Por que',
     'feature1.title': 'Histórias Cinematográficas',
-    'feature1.desc': 'Aprenda com histórias projetadas como séries da Netflix. Cada capítulo te prende mais que o anterior.',
+    'feature1.desc': 'Aprenda com histórias projetadas como séries da Netflix. Cada episódio prende mais que o anterior.',
     'feature2.title': 'IA Personalizada',
     'feature2.desc': 'Nossa IA adapta o conteúdo ao seu nível e estilo de aprendizado para maximizar seu progresso.',
     'feature3.title': 'Aprendizado Natural',
     'feature3.desc': 'Esqueça a gramática chata. Aprenda como fez com seu primeiro idioma: conversando.',
     'feature4.title': 'Resultados Comprovados',
     'feature4.desc': '95% dos nossos usuários alcançam fluência conversacional em menos de 6 meses.',
-    
+
     // Footer
     'footer.description': 'Aprenda idiomas de forma viciante e eficaz',
     'footer.product': 'Produto',
@@ -243,12 +620,14 @@ const translations = {
     'footer.privacy': 'Privacidade',
     'footer.terms': 'Termos',
     'footer.cookies': 'Cookies',
-    
+
     // Benefits
     'benefit.global': 'Alcance global com conteúdo educativo',
     'benefit.monetize': 'Monetize seu conhecimento de idiomas',
-    'benefit.ai': 'Ferramentas de IA para criar histórias', 
+    'benefit.ai': 'Ferramentas de IA para criar histórias',
     'benefit.community': 'Comunidade de milhões de estudantes',
+
+    ...creatorPartnerCopy.pt,
   },
 };
 

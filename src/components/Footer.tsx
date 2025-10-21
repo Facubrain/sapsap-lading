@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import Logo from "@/components/Logo";
 
@@ -64,7 +65,11 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">{t('footer.company')}</h4>
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="#" className="hover:text-secondary transition-colors">{t('footer.about')}</a></li>
-              <li><a href="#" className="hover:text-secondary transition-colors">{t('footer.creators')}</a></li>
+              <li>
+                <Link to="/creators" className="hover:text-secondary transition-colors">
+                  {t('footer.creators')}
+                </Link>
+              </li>
               <li><a href="#" className="hover:text-secondary transition-colors">{t('footer.careers')}</a></li>
               <li><a href="#" className="hover:text-secondary transition-colors">{t('footer.press')}</a></li>
             </ul>

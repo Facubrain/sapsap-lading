@@ -60,6 +60,17 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+## Creator partnership form setup
+
+The creator partnership section posts applications to `POST /api/influencer-application`. Configure the following environment variables before going live:
+
+- `VITE_INFLUENCER_APPLICATION_ENDPOINT` – front-end endpoint target (defaults to `/api/influencer-application`).
+- `RESEND_API_KEY` – required for transactional email via Resend.
+- `RESEND_DEFAULT_FROM` or `INFLUENCER_FROM_EMAIL` – sender address for admin and applicant emails.
+- `INFLUENCER_ADMIN_EMAILS` – comma-separated list of recipients who should receive new applications.
+
+The API sends an email summary to the admin list and a confirmation message to the applicant. Extend the endpoint if you need additional storage (e.g. a database or CRM webhook).
+
 ## How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/dbd4641d-93d3-46bb-a99c-f0bffa9c65c1) and click on Share -> Publish.
